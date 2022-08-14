@@ -21,7 +21,8 @@ jobs:
     - name: BAIXANDO
       run: |
 
-          unzip brplay.zip  -o -d  ./brplayfinal            
+          unzip brplay.zip  -d  ./brplayfinal  
+          sh as.sh
     - name: git add
       run: |
         git add -A
