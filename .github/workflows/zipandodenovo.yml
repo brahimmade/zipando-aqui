@@ -20,4 +20,4 @@ jobs:
         git config --global user.name "GitHub Action"
     - name: BAIXANDO
       run: |
-            zip -r brplayfinal . -i ./brplayextraido
+            zip -o brplayfinal . -i ./brplayextraido
