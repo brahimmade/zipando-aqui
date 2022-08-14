@@ -1,0 +1,34 @@
+name: BAIXANDO
+on:
+  schedule:
+    - cron: '* 09 * * *'
+
+  pull_request:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: config
+      run: |
+        git config --global user.email "action@github.com"
+        git config --global user.name "GitHub Action"
+    - name: BAIXANDO
+      run: |
+        wget -r https://github.com/olavopeixoto/plugin.video.brplay/releases/download/2.2.4/plugin.video.brplay-2.2.4.zip -O brplay.zip
+
+
+        
+    - name: git add
+      run: |
+        git add -A
+        ls -la
+    - name: commit & push
+      run: |
+        git commit -m "links atualizados"
+        git push
