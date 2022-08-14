@@ -20,4 +20,4 @@ jobs:
         git config --global user.name "GitHub Action"
     - name: BAIXANDO
       run: |
-            zip -o brplayfinal . -i ./brplayextraido
+            zip -r tecmint_files.zip brplayfinal 
