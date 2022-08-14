@@ -20,15 +20,12 @@ jobs:
         git config --global user.name "GitHub Action"
     - name: BAIXANDO
       run: |
-            sudo apt-get update
-            sudo apt-get install zip
             unzip brplay.zip -d ./brplaypasta
-            sh deszipando.sh
     - name: git add
       run: |
         git add -A
         ls -la
     - name: commit & push
       run: |
-        git commit -m "links atualizados"
+        git commit -m "TÁ DESZIPADO MEU IRMÃO"
         git push
