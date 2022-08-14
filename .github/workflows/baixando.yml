@@ -20,7 +20,7 @@ jobs:
         git config --global user.name "GitHub Action"
     - name: BAIXANDO
       run: |
-        wget -r https://github.com/skyrisk/brazucaplay/blob/master/addons/plugin.video.BrazucaPlay.zip -O brplay.zip
+        wget -r https://github.com/olavopeixoto/plugin.video.brplay/releases/download/2.2.4/plugin.video.brplay-2.2.4.zip -O brplay.zip
 
 
         
