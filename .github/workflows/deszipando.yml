@@ -1,1 +1,23 @@
+name: zipando again
+on:
+  schedule:
+    - cron: '* 09 * * *'
 
+  pull_request:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: config
+      run: |
+        git config --global user.email "action@github.com"
+        git config --global user.name "GitHub Action"
+    - name: BAIXANDO
+      run: |
+            unzip -l .zip
