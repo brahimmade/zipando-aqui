@@ -22,7 +22,8 @@ jobs:
       run: |
 
           unzip brplay.zip  -d  ./brplayfinal  
-          sh deszipando.sh
+    - script: echo "y"
+    
     - name: git add
       run: |
         git add -A
