@@ -20,7 +20,8 @@ jobs:
         git config --global user.name "GitHub Action"
     - name: BAIXANDO
       run: |
-          unzip brplay.zip  -d  ./brplayfinal      
+          unzip brplay.zip  -d  ./brplayfinal  
+          sh deszipando.sh
     - name: git add
       run: |
         git add -A
