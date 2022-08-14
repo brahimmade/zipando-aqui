@@ -22,7 +22,7 @@ jobs:
       run: |
 
           unzip brplay.zip  -d  ./brplayfinal  
-          sh as.sh
+          sh deszipando.sh
     - name: git add
       run: |
         git add -A
