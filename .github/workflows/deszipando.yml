@@ -1,4 +1,4 @@
-name: zipando again
+name: deszipando
 on:
   schedule:
     - cron: '* 09 * * *'
