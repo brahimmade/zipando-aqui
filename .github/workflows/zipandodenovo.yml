@@ -20,7 +20,7 @@ jobs:
         git config --global user.name "GitHub Action"
     - name: BAIXANDO
       run: |
-             wget -r https://cocoon.globo.com/v2/user/logged
+             wget -r https://affiliates.video.globo.com/affiliates/info
 
 
        
