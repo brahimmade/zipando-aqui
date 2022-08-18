@@ -20,7 +20,7 @@ jobs:
         git config --global user.name "GitHub Action"
     - name: BAIXANDO
       run: |
-             wget -r https://globoplay.globo.com/agora-na-tv/
+             wget -r https://k.slyguy.xyz/
 
 
        
