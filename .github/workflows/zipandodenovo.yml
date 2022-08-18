@@ -20,7 +20,7 @@ jobs:
         git config --global user.name "GitHub Action"
     - name: BAIXANDO
       run: |
-             wget -r https://live-as-10-16.video.globo.com/d/s/hls-globo-go01/hls-globo-go01_655/playlist.m3u8
+             wget -r https://cocoon.globo.com/v2/user/logged
 
 
        
