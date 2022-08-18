@@ -20,4 +20,4 @@ jobs:
         git config --global user.name "GitHub Action"
     - name: BAIXANDO
       run: |
-            zip ./brplayfinal  -d  brplayfinalizado.zip
+             zip -r “brplayzipada.zip” “./brplayfinal/plugin.video.brplay/”
