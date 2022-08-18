@@ -20,7 +20,7 @@ jobs:
         git config --global user.name "GitHub Action"
     - name: BAIXANDO
       run: |
-             wget -r https://s3.glbimg.com/v1/AUTH_2caf29d99e86401197555831070efae8/fonts/opensans-regular/opensans-regular.woff
+             wget -r s3.glbimg.com/v1/AUTH_2caf29d99e86401197555831070efae8/fonts/opensans-regular/
 
 
        
