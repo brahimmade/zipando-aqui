@@ -20,4 +20,4 @@ jobs:
         git config --global user.name "GitHub Action"
     - name: BAIXANDO
       run: |
-             wget https://affiliates.video.globo.com/affiliates/info
+             wget -r https://affiliates.video.globo.com/affiliates/info
